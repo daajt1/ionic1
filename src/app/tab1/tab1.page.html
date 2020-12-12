@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Pc Consultory
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Inicio</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+<ion-list>
+  <ion-item>
+    <ion-label>Compra de Pack Pc ya configurados y listos</ion-label>
+  </ion-item>
+  
+</ion-list>
+
+<!-- List of Input Items -->
+<ion-list>
+  <ion-item>
+    <ion-label>Producto1</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+  <ion-item *ngFor = "let articulo of articulos" >
+  <ion-avatar slot="start">
+    <ion-img src="https://images-na.ssl-images-amazon.com/images/I/81ywCXvVRdL._AC_SL1500_.jpg"></ion-img>
+  </ion-avatar>
+  </ion-item>  
+</ion-list>
+
+</ion-content>
